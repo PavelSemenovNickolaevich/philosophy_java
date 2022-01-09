@@ -1,6 +1,9 @@
 package practice.oop.task3;
 
-public class Warrior extends Hero{
+import practice.oop.task3.generic.MeleeWeapon;
+import practice.oop.task3.generic.Sword;
+
+public class Warrior<T extends MeleeWeapon> extends Hero<T>{
 
     public Warrior(String name, int damage) {
         super(name, damage);

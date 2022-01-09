@@ -1,8 +1,10 @@
 package practice.oop.task3;
 
+import practice.oop.task3.generic.RangeWeapon;
+
 import javax.sound.midi.Soundbank;
 
-public class Archer extends Hero{
+public class Archer<T extends RangeWeapon> extends Hero<T>{
 
     private Wolf wolf;
 
