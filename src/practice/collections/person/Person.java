@@ -2,7 +2,7 @@ package practice.collections.person;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
 
     private int id;
     private String firstName;
@@ -46,5 +46,10 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return Integer.compare(id, o.id);
     }
 }
