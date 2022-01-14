@@ -1,11 +1,11 @@
 package practice.task6;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
-public class Main {
+public class Main1 {
+
+    private static final String TARGET_VALUE = "****";
+    private static final int TARGET_LENGTH = 4;
 
     public static void main(String[] args) {
         List<String> list = new LinkedList<>(List.of("this", "is", "lots", "of", "fun", "for", "every", "Java", "programmer"));
@@ -13,21 +13,17 @@ public class Main {
     }
 
     private static void markLength4(List<String> list) {
-        String stars = "****";
         ListIterator<String> iterator = list.listIterator();
         while(iterator.hasNext()) {
             String next = iterator.next();
-            if (next.length() == 4) {
-                iterator.set(stars);
+            if (next.length() == TARGET_LENGTH) {
+                iterator.set(TARGET_VALUE);
                 iterator.add(next);
-                //iterator.remove();
             }
-            //  System.out.println(next);
         }
         for(String s: list) {
             System.out.println(s);
         };
-
 
     }
 }
