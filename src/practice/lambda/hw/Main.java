@@ -2,6 +2,7 @@ package practice.lambda.hw;
 
 import practice.lambda.tasks.Person;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -25,14 +26,15 @@ public class Main {
 //                .filter(values -> values.getGrades().size() > 3)
 //                .average();
 
-        Map<Integer, List<Integer>> map =  persons.stream()
-                .filter(value -> value.getGrades().size() > 3)
-                .mapToInt(String::valueOf)
-                .average()
-                .stream()
-                .collect(groupingBy(Student::getCourse, mapping(Student::getGrades, toList())));
 
-        System.out.println(map);
+//        Map<Integer, List<Integer>> map =  persons.stream()
+//                .filter(value -> value.getGrades().size() > 3)
+//                .mapToInt(String::valueOf)
+//                .average()
+//                .stream()
+//                .collect(groupingBy(Student::getCourse, mapping(Student::getGrades, toList())));
+//
+//        System.out.println(map);
 
 
 //        Map<Integer, List<String>> map = persons.stream()
