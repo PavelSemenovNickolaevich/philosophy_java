@@ -2,6 +2,7 @@ package practice.fileio;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 /**
  *              output stream
@@ -23,6 +24,7 @@ public class FileRunner {
         System.out.println(file.getName());
         System.out.println(file.getParent());
         System.out.println(file.getAbsolutePath());
+
 
         File dir = new File("resources/test/dir");
        // dir.mkdirs();

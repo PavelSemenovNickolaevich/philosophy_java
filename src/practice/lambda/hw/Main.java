@@ -22,6 +22,9 @@ public class Main {
                 new Student("Arni", "Kutuzov12324", 56, List.of(1, 5, 9, 7))
         );
 
+
+
+
 //        int result = persons.stream()
 //                .filter(values -> values.getGrades().size() > 3)
 //                .average();
