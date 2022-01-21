@@ -1,4 +1,4 @@
-package practice.fileio.hw;
+package practice.fileio.hw.hw1;
 
 import java.io.IOException;
 import java.nio.file.Files;
