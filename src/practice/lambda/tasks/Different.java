@@ -1,6 +1,9 @@
 package practice.lambda.tasks;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.LongUnaryOperator;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -24,7 +27,24 @@ public class Different {
         Stream<String> words = Pattern.compile("[\\P{L}]+").splitAsStream(context);
         words.forEach(System.out::println);
 
+       characterStream("boat").forEach(System.out::println);
 
+        List<String> wordList = List.of("Test", "Boat");
+        Stream<String> word = wordList.stream();
+
+        Stream<Character>  letters = word.flatMap( w -> characterStream(w));
+        System.out.println(letters);
 
     }
+
+    List<String> wordList = List.of("Test", "Boat");
+    Stream<String> word = wordList.stream();
+
+    public static Stream<Character> characterStream(String s) {
+        List<Character> result = new ArrayList<>();
+        for (char c : s.toCharArray()) result.add(c);
+        return result.stream();
+
+    }
+
 }
