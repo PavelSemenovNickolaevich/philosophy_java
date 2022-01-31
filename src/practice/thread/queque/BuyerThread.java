@@ -1,6 +1,7 @@
 package practice.thread.queque;
 
 import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
 
 public class BuyerThread implements Runnable {
 
