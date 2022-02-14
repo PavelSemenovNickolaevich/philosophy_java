@@ -74,7 +74,7 @@ public class JdbcRunner {
         String sql = String.format("select id from flight_repository.public.ticket where flight_id = %s", flightId);
 
         List<Long> result = new ArrayList<>();
-        try (var connection = ConnectionManager.open();
+        try (var connection = ConnectionManager.get();
              var statement = connection.createStatement()) {
             var resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {
