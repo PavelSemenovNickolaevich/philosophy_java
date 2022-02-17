@@ -19,6 +19,9 @@ public class DaoRunner {
         var ticketss = TicketDao.getInstance().findAll(ticketFilter);
         System.out.println(ticketss);
 
+        var ticket = TicketDao.getInstance().findById(5L);
+        System.out.println(ticket);
+
     }
 
     private static void updateTest() {
@@ -44,7 +47,7 @@ public class DaoRunner {
         var ticket = new Ticket();
         ticket.setPassengerNo("1234567");
         ticket.setPassengerName("Test");
-        ticket.setFlightId(3L);
+  //      ticket.setFlightId(3L);
         ticket.setSeatNo("B3");
         ticket.setCost(BigDecimal.TEN);
 
