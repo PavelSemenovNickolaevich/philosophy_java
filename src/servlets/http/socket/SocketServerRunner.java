@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.util.Scanner;
 
+//TCP протокол
+
 public class SocketServerRunner {
 
     public static void main(String[] args) throws IOException {

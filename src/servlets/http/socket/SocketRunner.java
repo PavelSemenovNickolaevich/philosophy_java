@@ -9,7 +9,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 
-//Пример создания клиента
+//Пример создания клиента  TCP протокол
 
 public class SocketRunner {
     public static void main(String[] args) throws IOException {
