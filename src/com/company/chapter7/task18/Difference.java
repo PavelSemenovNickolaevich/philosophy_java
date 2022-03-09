@@ -2,7 +2,7 @@ package com.company.chapter7.task18;
 
 import java.util.Random;
 
-import static jdk.nashorn.internal.objects.Global.println;
+
 
 /* Create a class with a static final field and a final field and demonstrate
  * the difference between the two.

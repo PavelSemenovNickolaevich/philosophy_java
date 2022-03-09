@@ -14,5 +14,32 @@ public class Main {
 
        // System.out.println(StaticTest.StatClass.i);
         System.out.println(Class.forName(StaticTest.StaticBlockClass.class.getName()));
+
+        Thread thread = new Thread() {
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    System.out.println("hello this is thread one");
+                }
+            }
+        };
+
+        Thread threadTwo = new Thread() {
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    System.out.println("hello this is thread two");
+                }
+            }
+        };
+
+        thread.start();
+
+        threadTwo.start();
+
+        for ( int i = 0; i < 100; i++) {
+            String s = "3333" + i;
+            System.out.println(s);
+        }
     }
+
+
 }
