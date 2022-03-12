@@ -20,17 +20,27 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var headerNames =  req.getHeaderNames();
-        while(headerNames.hasMoreElements()) {
-            var header = headerNames.nextElement();
-            System.out.println(req.getHeader(header));
-        }
+//        var headerNames =  req.getHeaderNames();
+//        while(headerNames.hasMoreElements()) {
+//            var header = headerNames.nextElement();
+//            System.out.println(req.getHeader(header));
+//        }
+        var paramValue = req.getParameter("param");
+        var parameterMap = req.getParameterMap();
+        System.out.println();
+
 
         resp.setContentType("text/html; charset=UTF-8");
        // resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
         try (var writer = resp.getWriter()) {
             writer.write("Hello from First Servlet");
         }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        var parameterMap = req.getParameterMap();
+        System.out.println(parameterMap);
     }
 
     @Override
