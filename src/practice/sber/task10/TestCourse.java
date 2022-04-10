@@ -2,6 +2,10 @@ package practice.sber.task10;
 
 public class TestCourse {
     public static void main(String[] args) {
+        int[][][] x = new int[4][5][6];
+        System.out.println(x.length);
+        System.out.println(x[2].length);
+        System.out.println(x[0][0].length);
         CourseNew course1 = new CourseNew("«Основы программирования»");
         CourseNew course2 = new CourseNew("«Объектно-ориентированное программирование»");
 

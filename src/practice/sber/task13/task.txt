@@ -1,0 +1,53 @@
+Задание №16
+
+Java-библиотека предоставляет класс String.
+Предоставьте собственную реализацию следующих методов (назовите новый класс MyString1):
+
+public MyString1(char[] chars);
+public char charAt(int index);
+public int length();
+public MyString1 substring(int begin, int end);
+public MyString1 toLowerCase();
+public static MyString1 valueOf(int i);
+public char[] toChars();
+public boolean equals(MyString1 obj);
+
+
+Задание №17
+
+Java-библиотека предоставляет класс String.
+ Предоставьте собственную реализацию следующих методов (назовите новый класс MyString2):
+
+public MyString2(char[] chars);
+public MyString2 substring(int begin);
+public MyString2 toUpperCase();
+public char[] toChars();
+public static MyString2 valueOf(boolean b);
+
+
+Задание №18
+
+Java-библиотека предоставляет класс Character.
+Предоставьте собственную реализацию следующих методов (назовите новый класс MyCharacter):
+
+public MyCharacter(char value);
+public char charValue();
+public int compareTo(MyCharacter anotherCharacter);
+public boolean equals(MyCharacter anotherCharacter);
+public boolean isDigit();
+public static boolean isDigit(char ch);
+public static boolean isLetter(char ch);
+public static boolean isLetterOrDigit(char ch);
+public static boolean isLowerCase(char ch);
+public static boolean isUpperCase(char ch);
+public static char toUpperCase(char ch);
+public static char toLowerCase(char ch);
+
+
+Задание №19
+
+Метод split() класса String возвращает массив строк, который содержит подстроки, отделенные разделителями.
+Однако сами разделители не возвращаются. Реализуйте следующий новый метод split(), который возвращает массив строк, содержащий подстроки, отделенные совпадающими разделителями, включая сами разделители.
+
+public static String[] split(String s, String regex)
+Например, split("ab#12#453", "#") возвращает ab, #, 12, # и 453 в массиве строк, а split("a?b?gf#e", "[?#]") возвращает a, ?, b, ?, gf, # и e в массиве строк.
