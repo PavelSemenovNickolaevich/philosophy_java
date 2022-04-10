@@ -1,0 +1,25 @@
+Задание №20
+
+Java-библиотека предоставляет класс StringBuilder. Предоставьте собственную реализацию следующих методов (назовите новый класс MyStringBuilder1):
+
+public MyStringBuilder1(String s);
+public MyStringBuilder1 append(MyStringBuilder1 s);
+public MyStringBuilder1 append(int i);
+public int length();
+public char charAt(int index);
+public MyStringBuilder1 toLowerCase();
+public MyStringBuilder1 substring(int begin, int end);
+public String toString();
+Задание №21
+
+Java-библиотека предоставляет класс StringBuilder. Предоставьте собственную реализацию следующих методов (назовите новый класс MyStringBuilder2):
+
+public MyStringBuilder2();
+public MyStringBuilder2(char[] chars);
+public MyStringBuilder2(String s);
+public MyStringBuilder2 insert(int offset, MyStringBuilder2 s);
+public MyStringBuilder2 reverse();
+public MyStringBuilder2 substring(int begin);
+public MyStringBuilder2 toUpperCase();
+public String toString();
+Назад
