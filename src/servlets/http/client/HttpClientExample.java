@@ -21,9 +21,9 @@ public class HttpClientExample {
                 .GET()
                 .build();
 
-        HttpRequest request2 = HttpRequest.newBuilder(URI.create("https://www.google.com"))
-                .POST(HttpRequest.BodyPublishers.ofFile(Path.of("path", "to", "file")))
-                .build();
+//        HttpRequest request2 = HttpRequest.newBuilder(URI.create("https://www.google.com"))
+//                .POST(HttpRequest.BodyPublishers.ofFile(Path.of("path", "to", "file")))
+//                .build();
 
         var response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());

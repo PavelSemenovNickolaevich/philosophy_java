@@ -32,5 +32,6 @@
     </orderEntry>
     <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="postgresql-42.3.3" level="project" />
+    <orderEntry type="library" name="lombok" level="project" />
   </component>
 </module>
