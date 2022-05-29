@@ -3,6 +3,13 @@
     <output-path>$PROJECT_DIR$/out/artifacts/servlets_starter</output-path>
     <root id="archive" name="servlets-starter.war">
       <element id="artifact" artifact-name="philosophy_java:Web exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/postgresql-42.3.2.jar" />
+          <element id="library" level="project" name="postgresql-42.3.3" />
+          <element id="library" level="project" name="lombok" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

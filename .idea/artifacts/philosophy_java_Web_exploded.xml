@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="philosophy_java" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/postgresql-42.3.2.jar" />
+          <element id="library" level="project" name="postgresql-42.3.3" />
+          <element id="library" level="project" name="lombok" />
+        </element>
       </element>
     </root>
   </artifact>
