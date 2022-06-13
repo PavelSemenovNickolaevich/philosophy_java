@@ -1,13 +1,7 @@
 <%@ page import="servlets.http.service.TicketService" %>
 <%@ page import="servlets.http.dto.TicketDto" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: a19150891
-  Date: 13.06.2022
-  Time: 20:32
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>Title</title>
